@@ -1,6 +1,7 @@
 {
   "name": "quicksell",
   "version": "0.1.0",
+  "homepage":"https://him-2u.github.io/assignment-frtnd",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -13,11 +14,13 @@
     "react-icons": "^4.10.1",
     "react-loader-spinner": "^5.3.4",
     "react-redux": "^8.1.2",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4",
     "yarn": "^1.22.19"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -40,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
   }
 }
